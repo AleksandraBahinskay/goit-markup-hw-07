@@ -57,7 +57,6 @@ h4,
 h5,
 h6,
 p {
-  display: flex;
   margin: 0;
 }
 
@@ -869,7 +868,6 @@ h4,
 h5,
 h6,
 p {
-  display: flex;
   margin: 0;
 }
 
