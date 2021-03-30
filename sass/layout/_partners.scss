@@ -1,0 +1,37 @@
+.partners {
+  padding: 94px 0;
+}
+.partners-list {
+  display: flex;
+}
+
+.partners-thumb {
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--paragraph-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border 250ms var(--cub);
+
+  .partners-link:hover & {
+    border: 1px solid var(--action-color);
+  }
+}
+.items:not(:last-child) {
+  margin-right: 30px;
+}
+
+.partner-logo {
+  fill: #afb1b8;
+  transition: fill 250ms var(--cub);
+
+  .partners-link:hover & {
+    fill: var(--action-color);
+  }
+}
+
+.partners-link {
+  transition: fill 250ms var(--cub);
+}
