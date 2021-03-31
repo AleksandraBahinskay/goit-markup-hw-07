@@ -2,13 +2,13 @@
   padding: var(--section-pdg) 0;
 }
 
-.abilities-list {
+.abilities__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.abilities-item {
+.abilities__item {
   margin-right: var(--primary-gap);
   flex-basis: calc((100% - 60px) / 3);
   position: relative;
@@ -18,7 +18,7 @@
   }
 }
 
-.image-cover {
+.abilities__cover {
   position: absolute;
   bottom: 0;
   left: 0;

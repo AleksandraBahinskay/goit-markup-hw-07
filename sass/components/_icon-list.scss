@@ -1,0 +1,33 @@
+.icon-list {
+  display: flex;
+}
+
+.icon-list__item:not(:last-child) {
+  width: calc((100%-30px) / 4);
+  margin-right: 10px;
+}
+
+.icon-list__icons {
+  fill: var(--white);
+}
+.icon-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  transition: background-color 250ms var(--cub);
+
+  &:hover,
+  &:focus {
+    background-color: var(--action-color);
+
+    & .social-list__icon,
+    & .social-list__icon {
+      fill: var(--white);
+    }
+  }
+}

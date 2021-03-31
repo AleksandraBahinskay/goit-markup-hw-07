@@ -1,11 +1,11 @@
 .partners {
   padding: 94px 0;
 }
-.partners-list {
+.partners__list {
   display: flex;
 }
 
-.partners-thumb {
+.partners__thumb {
   width: 170px;
   height: 90px;
   border: 1px solid var(--paragraph-color);
@@ -15,7 +15,7 @@
   align-items: center;
   transition: border 250ms var(--cub);
 
-  .partners-link:hover & {
+  .partners__link:hover & {
     border: 1px solid var(--action-color);
   }
 }
@@ -23,15 +23,15 @@
   margin-right: 30px;
 }
 
-.partner-logo {
+.partner__logo {
   fill: #afb1b8;
   transition: fill 250ms var(--cub);
 
-  .partners-link:hover & {
+  .partners__link:hover & {
     fill: var(--action-color);
   }
 }
 
-.partners-link {
+.partners__link {
   transition: fill 250ms var(--cub);
 }

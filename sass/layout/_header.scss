@@ -1,9 +1,31 @@
-.header {
+.page-header {
   border-bottom: 1px solid #ececec;
 }
-
-.site-nav .link,
-.header-contacts .link {
+.page-header__container {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav__list {
+  display: flex;
+}
+.site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.site-nav__link,
+.contacts .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -11,57 +33,14 @@
   color: var(--main-title-color);
 }
 
-.header-contacts .link {
+.contacts .link {
   color: var(--paragraph-color);
 }
 
-.action {
-  transition: color 250ms var(--cub);
-  &:hover,
-  &:focus {
-    color: var(--action-color);
-    fill: var(--action-color);
-  }
-}
-
-.auth-icon {
-  transition: fill 250ms var(--cub);
-}
-
-.site-nav .current {
-  color: var(--action-color);
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-}
-
-.site-nav {
-  display: flex;
-  align-items: center;
-}
-
-.site-nav .list {
-  display: flex;
-}
-
-.list-item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 50px;
 }
-
-.nav-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.header-contacts {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.contacts-links {
+.contacts__links {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
@@ -78,21 +57,29 @@
     fill: var(--action-color);
   }
 }
-
-svg {
+.contacts__icon {
   transition: fill 250ms var(--cub);
-}
-
-.auth-icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
   align-items: center;
   fill: var(--paragraph-color);
 }
+.action {
+  transition: color 250ms var(--cub);
+  &:hover,
+  &:focus {
+    color: var(--action-color);
+    fill: var(--action-color);
+  }
+}
 
-.contacts-link:not(:last-child) {
-  margin-right: 50px;
+.site-nav .current {
+  color: var(--action-color);
+}
+
+svg {
+  transition: fill 250ms var(--cub);
 }
 
 .current::after {
