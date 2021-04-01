@@ -1,0 +1,79 @@
+body {
+  font-family: var(--primary-font);
+  background-color: var(--primary-bgc);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+svg {
+  transition: fill 250ms var(--cub);
+}
+
+.list {
+  list-style: none;
+
+  .team & {
+    display: flex;
+  }
+
+  .site-nav & {
+    display: flex;
+  }
+
+  .advantages & {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.link {
+  text-decoration: none;
+  fill: var(--action-color);
+
+  .site-nav &,
+  .contacts-list & {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-title-color);
+  }
+
+  .contacts-list & {
+    color: var(--paragraph-color);
+  }
+}
+
+.menu__item {
+  position: relative;
+}
+
+.title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+  margin-bottom: 50px;
+}
