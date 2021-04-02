@@ -77,46 +77,9 @@ svg {
 .list {
   list-style: none;
 }
-.team .list {
-  display: flex;
-}
-.site-nav .list {
-  display: flex;
-}
-.advantages .list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 
 .link {
   text-decoration: none;
-  fill: var(--action-color);
-}
-.site-nav .link, .contacts-list .link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-title-color);
-}
-.contacts-list .link {
-  color: var(--paragraph-color);
-}
-
-.menu__item {
-  position: relative;
-}
-
-.title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-title-color);
-  margin-bottom: 50px;
 }
 
 .container {
@@ -184,6 +147,7 @@ svg {
 
 .social-list__icon {
   transition: fill 250ms var(--cub);
+  fill: #afb1b8;
 }
 .social-list__link:hover .social-list__icon, .social-list__link:focus .social-list__icon {
   fill: var(--white);
@@ -417,6 +381,51 @@ svg {
   background-color: var(--action-color);
 }
 
+.team .list {
+  display: flex;
+}
+.site-nav .list {
+  display: flex;
+}
+.advantages .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.link {
+  fill: var(--action-color);
+}
+.site-nav .link, .contacts-list .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+}
+.contacts-list .link {
+  color: var(--paragraph-color);
+  transition: fill 250ms var(--cub);
+}
+
+.menu__item {
+  position: relative;
+}
+.menu__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+  margin-bottom: 50px;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -427,15 +436,12 @@ svg {
 .action:hover, .action:focus {
   color: var(--action-color);
   fill: var(--action-color);
+  transition: fill 250ms var(--cub);
 }
 
 .site-nav {
   display: flex;
   align-items: center;
-}
-
-.menu__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .menu__link {
@@ -447,6 +453,7 @@ svg {
   display: flex;
   align-items: center;
   margin-left: auto;
+  transition: fill 250ms var(--cub);
 }
 
 .contacts-list__link {
@@ -463,6 +470,7 @@ svg {
 }
 .contacts-list__link:hover svg, .contacts-list__link:focus svg {
   fill: var(--action-color);
+  transition: fill 250ms var(--cub);
 }
 
 .contacts-list__icon {
@@ -474,6 +482,9 @@ svg {
   transition: fill 250ms var(--cub);
 }
 
+.contacts-list__item {
+  transition: fill 5250ms var(--cub);
+}
 .contacts-list__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -886,46 +897,9 @@ svg {
 .list {
   list-style: none;
 }
-.team .list {
-  display: flex;
-}
-.site-nav .list {
-  display: flex;
-}
-.advantages .list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 
 .link {
   text-decoration: none;
-  fill: var(--action-color);
-}
-.site-nav .link, .contacts-list .link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-title-color);
-}
-.contacts-list .link {
-  color: var(--paragraph-color);
-}
-
-.menu__item {
-  position: relative;
-}
-
-.title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-title-color);
-  margin-bottom: 50px;
 }
 
 .container {
@@ -955,15 +929,12 @@ svg {
 .action:hover, .action:focus {
   color: var(--action-color);
   fill: var(--action-color);
+  transition: fill 250ms var(--cub);
 }
 
 .site-nav {
   display: flex;
   align-items: center;
-}
-
-.menu__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .menu__link {
@@ -975,6 +946,7 @@ svg {
   display: flex;
   align-items: center;
   margin-left: auto;
+  transition: fill 250ms var(--cub);
 }
 
 .contacts-list__link {
@@ -991,6 +963,7 @@ svg {
 }
 .contacts-list__link:hover svg, .contacts-list__link:focus svg {
   fill: var(--action-color);
+  transition: fill 250ms var(--cub);
 }
 
 .contacts-list__icon {
@@ -1002,6 +975,9 @@ svg {
   transition: fill 250ms var(--cub);
 }
 
+.contacts-list__item {
+  transition: fill 5250ms var(--cub);
+}
 .contacts-list__item:not(:last-child) {
   margin-right: 50px;
 }

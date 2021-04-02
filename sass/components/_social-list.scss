@@ -24,6 +24,7 @@
 
 .social-list__icon {
   transition: fill 250ms var(--cub);
+  fill: #afb1b8;
 
   .social-list__link:hover &,
   .social-list__link:focus & {

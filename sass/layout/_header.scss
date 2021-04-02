@@ -9,16 +9,13 @@
   &:focus {
     color: var(--action-color);
     fill: var(--action-color);
+    transition: fill 250ms var(--cub);
   }
 }
 
 .site-nav {
   display: flex;
   align-items: center;
-}
-
-.menu__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .menu__link {
@@ -30,6 +27,7 @@
   display: flex;
   align-items: center;
   margin-left: auto;
+  transition: fill 250ms var(--cub);
 }
 
 .contacts-list__link {
@@ -47,6 +45,7 @@
   &:hover svg,
   &:focus svg {
     fill: var(--action-color);
+    transition: fill 250ms var(--cub);
   }
 }
 
@@ -59,6 +58,10 @@
   transition: fill 250ms var(--cub);
 }
 
-.contacts-list__item:not(:last-child) {
-  margin-right: 50px;
+.contacts-list__item {
+  transition: fill 5250ms var(--cub);
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
