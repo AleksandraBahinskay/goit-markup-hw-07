@@ -103,13 +103,9 @@ svg {
   border-bottom: 1px solid #ececec;
 }
 
-.action {
-  transition: color 250ms var(--cub);
-}
 .action:hover, .action:focus {
   color: var(--action-color);
   fill: var(--action-color);
-  transition: fill 250ms var(--cub);
 }
 
 .site-nav {
@@ -126,7 +122,6 @@ svg {
   display: flex;
   align-items: center;
   margin-left: auto;
-  transition: fill 250ms var(--cub);
 }
 
 .contacts-list__link {
@@ -139,11 +134,10 @@ svg {
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
-  transition: fill 250ms var(--cub);
+  transition: color 250ms var(--cub);
 }
 .contacts-list__link:hover svg, .contacts-list__link:focus svg {
   fill: var(--action-color);
-  transition: fill 250ms var(--cub);
 }
 
 .contacts-list__icon {
@@ -155,9 +149,6 @@ svg {
   transition: fill 250ms var(--cub);
 }
 
-.contacts-list__item {
-  transition: fill 5250ms var(--cub);
-}
 .contacts-list__item:not(:last-child) {
   margin-right: 50px;
 }
